@@ -94,10 +94,76 @@ if(nombre != "" && apellido != ""){
 //   alert("NOmbre incorrecto");
 // }
 
-let nombre = prompt("Ingrese el nombre");
+// let nombre = prompt("Ingrese el nombre");
 
-if(nombre != "" && (nombre === "andres" || nombre === "ANDRES")){
-  alert("Hola Andres");
-}else{
-  alert("Nombre incorrecto");
+// if(nombre != "" && (nombre === "andres" || nombre === "ANDRES")){
+//   alert("Hola Andres");
+// }else{
+//   alert("Nombre incorrecto");
+// }
+
+//calculadora
+//par o impar
+//si un string contiene una palabra
+
+// let numero1 = parseInt(prompt("Ingrese el primer número"));
+// let numero2 = parseInt(prompt("Ingrese el segundo número"));
+// let operacion = prompt("Ingrese la operacion");
+
+// if(operacion === "+"){
+//   let resultado = numero1 + numero2;
+//   alert(resultado);
+// }else if(operacion === "-"){
+//   let resultado = numero1 - numero2;
+//   alert(resultado);
+// }else if(operacion === "/"){
+//   let resultado = numero1 / numero2;
+//   alert(resultado);
+// }else{
+//   let resultado = numero1 * numero2;
+//   alert(resultado);
+// }
+
+// let numero1 = parseInt(prompt("Ingrese el primer numero"));
+// let numero2 = parseInt(prompt("Ingrese el segundo numero"));
+// let operacion = prompt("Que operacion desea realizar? Valor posibles: Suma, resta, multiplicación o division");
+
+// if (numero1 === ""){
+//   alert("Debe completar el primer numero");
+// }else if (numero2 === ""){
+//   alert("Debe completar el segundo numero");
+// }else if (operacion === ""){
+//   alert("Debe completar el nombre de la operación deseada")    
+// }else if (operacion === "+"){
+//   let resultado = numero1 + numero2;
+//   alert(resultado);
+// }else if (operacion === "-"){
+//   let resultado = numero1 - numero2;
+//   alert(resultado);
+// }else if (operacion === "*"){
+//   let resultado = numero1 * numero2;
+//   alert(resultado);
+// }else if (operacion === "/"){
+//   let resultado = numero1 / numero2;
+//   alert(resultado);
+// }else {
+//   alert("Debe ingresar una operacion valida")
+// }
+
+let numero1 = parseInt(prompt ("ingrese n1"));
+let numero2 = parseInt(prompt ("ingrese n2"));
+let operacion = prompt("ingrese la operacion");
+
+if (operacion === "+") {
+  let resultado = numero1 + numero2;
+  alert (resultado);
+}else if (operacion === "-") {
+  let resultado = numero1 - numero2;
+  alert (resultado);
+}else if (operacion === "/") {
+  let resultado = numero1 / numero2;
+  alert (resultado);
+}else {
+  let resultado = numero1 * numero2;
+  alert (resultado);
 }
