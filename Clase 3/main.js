@@ -117,11 +117,11 @@ switch(valor){
 //   case "ars":
 //     console.log("la moneda de argentina");
 //     break;
-  
+
 //   case "cop":
 //     console.log("la moneda de colombia");
 //     break;
-  
+
 //   case "clp":
 //     console.log("moneda de chile");
 //     break;
@@ -131,22 +131,35 @@ switch(valor){
 //     break;
 // }
 
-let nombre = prompt("Ingrese un nombre");
+// let nombre = prompt("Ingrese un nombre");
 
-while(nombre != "ESC"){
-  switch(nombre){
-    case "ANA":
-      alert("Hola ANA");
-      break;
+// while(nombre != "ESC"){
+//   switch(nombre){
+//     case "ANA":
+//       alert("Hola ANA");
+//       break;
 
-    case "JUAN":
-      alert("Hola JUAN");
-      break;
-    
-    default:
-      alert(`Quién eres? ${nombre}`);
-      break;
+//     case "JUAN":
+//       alert("Hola JUAN");
+//       break;
+
+//     default:
+//       alert(`Quién eres? ${nombre}`);
+//       break;
+//   }
+
+//   nombre = prompt("Ingrese un nombre");
+// }
+
+let numeroInicial = parseInt(prompt("Ingresar un numero :"));
+let resultadoFinal = 0;
+for (let i = 0; i <= 5; i++) {
+  let numeroSuma = parseInt(prompt("Ingresar un numero para sumar :"));
+  if (i === 0) {
+    resultadoFinal = numeroInicial + numeroSuma;
+    alert(resultadoFinal);
+  } else {
+    resultadoFinal += numeroSuma;
+    alert(resultadoFinal);
   }
-
-  nombre = prompt("Ingrese un nombre");
 }
