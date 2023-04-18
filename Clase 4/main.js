@@ -141,7 +141,7 @@ const precioProducto = 1000;
 const descuento = 10;
 
 let nuevoPrecio = resta(suma(precioProducto, iva(precioProducto)), descuento);
-                = resta(suma(1000, iva(1000)), 10);
-                = resta(suma(1000, 210), 10);
-                = resta(1210, 10);
-                = 1200;
+                // = resta(suma(1000, iva(1000)), 10);
+                // = resta(suma(1000, 210), 10);
+                // = resta(1210, 10);
+                // = 1200;
