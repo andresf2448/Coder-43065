@@ -137,21 +137,38 @@ console.log(persona1); */
 // console.log(producto1);
 // console.log(producto2);
 
-class Producto {
-  constructor(nombre, precio, cantidad) {
-    this.nombre = nombre;
-    this.precio = precio;
-    this.cantidad = cantidad;
-  }
+// class Producto {
+//   constructor(nombre, precio, cantidad) {
+//     this.nombre = nombre;
+//     this.precio = precio;
+//     this.cantidad = cantidad;
+//   }
 
-  vender(){
-    this.cantidad -= 1; // this.cantidad = this.cantidad - 1
+//   vender(){
+//     this.cantidad -= 1; // this.cantidad = this.cantidad - 1
+//   }
+// }
+
+// const producto1 = new Producto("Televisor", 1000, 5);
+// const producto2 = new Producto("Televisor1", 10001, 5);
+// console.log(producto1);
+// producto1.vender();
+// console.log(producto1);
+// console.log(producto2);
+
+let paginasLeidas = 0;
+class Libro {
+  constructor(nombre, genero, paginas) {
+    this.nombre = nombre;
+    this.genero = genero;
+    this.paginas = paginas;
+  }
+  leer() {
+    this.paginas = this.paginas - paginasLeidas;
   }
 }
+const libro1 = new Libro("Emma", "Novela", 350);
 
-const producto1 = new Producto("Televisor", 1000, 5);
-const producto2 = new Producto("Televisor1", 10001, 5);
-console.log(producto1);
-producto1.vender();
-console.log(producto1);
-console.log(producto2);
+paginasLeidas = parseInt(prompt("¿Cuantas paginas leiste hoy?"));
+libro1.leer();
+alert(libro1.paginas);
