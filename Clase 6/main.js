@@ -120,21 +120,21 @@ estructura de un arreglo
 //   }
 // }
 
-const productos = [
-  { id: 1, nombre: "zapato mujer", precio: 1000 },
-  { id: 2, nombre: "camisa", precio: 1350 },
-  { id: 3, nombre: "gorra", precio: 750 },
-  { id: 4, nombre: "media", precio: 250 },
-];
+// const productos = [
+//   { id: 1, nombre: "zapato mujer", precio: 1000 },
+//   { id: 2, nombre: "camisa", precio: 1350 },
+//   { id: 3, nombre: "gorra", precio: 750 },
+//   { id: 4, nombre: "media", precio: 250 },
+// ];
 
-let nombre = prompt("Ingrese el nombre del producto");
-let precio = prompt("Ingrese el precio del producto");
+// let nombre = prompt("Ingrese el nombre del producto");
+// let precio = prompt("Ingrese el precio del producto");
 
-let producto = {
-  id: productos.length + 1,
-  nombre,
-  precio,
-};
+// let producto = {
+//   id: productos.length + 1,
+//   nombre,
+//   precio,
+// };
 
-productos.push(producto);
-console.log(productos);
+// productos.push(producto);
+// console.log(productos);
