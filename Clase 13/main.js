@@ -45,9 +45,66 @@
 
 // sumar(4, 3, 5, 7, 9, 4, 1);
 
-function sumar(...numeros) {
-  return numeros.reduce((acum, item) => acum + item, 0);
+// function sumar(...numeros) {
+//   return numeros.reduce((acum, item) => acum + item, 0);
+// }
+
+// console.log(sumar(2, 5, 4, 6, 87, 9));
+// console.log(sumar(2, 5, 4, 6));
+
+/* 
+if(condicion1){
+  codigo en caso de la condicion1 sea verdadera
+}else if(condicion2){
+  codigo en caso de que la condicion2 sea verdadera
+}else{
+  codigo cuando ninguna de las condiciones es verdadera
+}
+*/
+
+/* let entrada = prompt("INgrese el usuario");
+
+while (entrada != "pepito") {
+  alert("usuario incorrecto");
+  entrada = prompt("INgrese el usuario");
 }
 
-console.log(sumar(2, 5, 4, 6, 87, 9));
-console.log(sumar(2, 5, 4, 6));
+alert("Bienvenido"); */
+
+// function sumar(x, y) {
+//   return x + y;
+// }
+
+// const resta = (x, y) => x - y;
+
+// function Persona(nombre, edad) {
+//   this.nombre = nombre;
+//   this.edad = edad;
+//   this.hablar = function(){console.log(`Hola soy ${this.nombre}`);}
+// }
+
+// class Persona {
+//   constructor(nombre, edad) {
+//     this.nombre = nombre;
+//     this.edad = edad;
+//   }
+// }
+
+// const persona1 = new Persona("pepito", 34);
+// const persona2 = new Persona("maria", 23);
+
+// forEach
+// map
+// filter
+// find
+
+let formulario = document.getElementById("formulario");
+
+formulario.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let inputs = e.target.children; // aá están todos los inputs
+
+  console.log(inputs[0].value);
+  console.log(inputs[1].value);
+});
