@@ -1,11 +1,11 @@
 // fetch(url, config)
 
-// fetch("https://jsonplaceholder.typicode.com/posts")
-//   .then(response => response.json())
-//   .then(data => {
-//     console.log(data[0].title);
-//     console.log(data[0].body);
-//   })
+fetch("https://jsonplaceholder.typicode.com/posts")
+  .then(response => response.json())
+  .then(data => {
+    console.log(data[0].title);
+    console.log(data[0].body);
+  })
 
 // let listado = document.getElementById("listado");
 
@@ -54,25 +54,25 @@
 //     });
 //   });
 
-let listado = document.getElementById("listado");
+// let listado = document.getElementById("listado");
 
-const pedirDatos = async () => {
-  try {
-    const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-    const data = await response.json();
+// const pedirDatos = async () => {
+//   try {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+//     const data = await response.json();
 
-    data.forEach((item) => {
-      const li = document.createElement("li");
-      li.innerHTML = `
-      <h2>${item.title}</h2>
-      <p>${item.body}</p>
-    `;
+//     data.forEach((item) => {
+//       const li = document.createElement("li");
+//       li.innerHTML = `
+//       <h2>${item.title}</h2>
+//       <p>${item.body}</p>
+//     `;
 
-      listado.append(li);
-    });
-  } catch (error) {
-    console.log(error);
-  }
-};
+//       listado.append(li);
+//     });
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
 
-pedirDatos();
+// pedirDatos();
